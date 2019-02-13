@@ -1,0 +1,32 @@
+.formats {
+  height: 376px;
+  background: $gray-color-3;
+  
+  .container {
+    @include displa_flex(row, space-around, center);
+  }
+
+  .formats_item {
+    width: 258px;
+    @include displa_flex(column, center, center);
+  }
+
+  img {
+    margin-bottom: 29px;
+  }
+
+  h3 {
+    color: $dark-color-3;
+    width: 193px;
+    text-align: center;
+    font-size: 21px;
+    font-weight: bold;
+  }
+  
+  p {
+    font-size: 14px;
+    color: $dark-color-3;
+    width: 193px;
+    text-align: center;
+  }
+}

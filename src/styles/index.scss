@@ -1,5 +1,13 @@
-$body-color: blue;
+@import "./reset.scss";
+@import "./mixins/mixins.scss";
+@import "./constants/constants.scss";
+@import "./common.scss";
+@import "./header.scss";
+@import "./example_presentation.scss";
+@import "./formats.scss";
+@import "./think_responsive.scss";
+@import "./portfolio.scss";
+@import "./projects.scss";
+@import "./blog.scss";
+@import "./blog_footer_slider.scss";
 
-body {
-  color: $body-color;
-}

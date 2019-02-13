@@ -1,0 +1,26 @@
+.portfolio {
+  padding-top: 54px;
+  background: $gray-color-3;
+  height: 470px;
+}
+
+.p_style_1 {
+  margin-bottom: 48px;
+}
+
+.portfolio_items {
+  @include displa_flex(row, space-between, center);
+  text-align: center;
+  img {
+    width: 200px;
+    height: 150px;
+    border-radius: 5px;
+    margin-bottom: 28px;
+  }
+  h3 {
+    font-size: 21px;
+    font-weight: bold;
+    color: $dark-color-3;
+    margin-bottom: 5px;
+  }
+}

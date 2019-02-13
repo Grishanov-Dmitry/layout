@@ -1,0 +1,29 @@
+.example_presentation {
+  height: 663px;
+  background: url(../../public/img/bg.png) no-repeat;
+
+  .container {
+    @include displa_flex(column, space-between, center);
+  }
+
+  .text {
+    margin-top: 63px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 60px;
+    color: $white-color;
+    margin-bottom: 20px;
+    q {
+      quotes: "\201c" "\201d";
+      color: white;
+    }
+  }
+
+  p {
+    font-size: 16px;
+    color: $gray-color-2;
+  }
+  
+}

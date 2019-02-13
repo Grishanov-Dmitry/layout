@@ -1,0 +1,37 @@
+.blog_footer_slider { 
+  height: 72px;
+  background: $gray-color-1;
+
+  .container {
+    @include displa_flex(row, space-between, center);
+  }
+
+  h2 {
+    font-family: Arial;
+    font-size: 36px;
+    font-weight: bold;
+    color: $white-color;
+  }
+  .post_slider {
+    width: 263px;
+    height: 35px;
+    @include displa_flex(row, space-between, center);
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .prev_post {
+    width: 141px;
+    background: $dark-color-2;
+    color: $white-color;
+  }
+  .next_post {
+    width: 114px;
+    background: $yellow-color;
+    color: $dark-color-1;
+  }
+  .prev_post, .next_post {
+    border-radius: 5px;
+    height: 100%;
+    @include displa_flex(row, center, center);
+  }
+}
