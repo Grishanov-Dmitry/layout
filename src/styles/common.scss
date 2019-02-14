@@ -4,14 +4,14 @@
   margin: auto;
 }
 
-.h2_style_1 {
+.h2_common_style {
   font-size: 36px;
   font-weight: bold;
-  color: $dark-color-3;
+  color: $oil_color;
   margin: auto;
   text-align: center; 
 }
-.p_style_1 {
+.p_margin_bot_48 {
   width: 874px;
   font-size: 16px;
   color: #55606e;
@@ -22,6 +22,37 @@
   font-weight: bold;
 }
 
+.blue_color {
+  color: $blue-color;
+}
+
 a {
   text-decoration: none;
+  color: $white-color;
+}
+
+.flex_row_between_center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex_row_center_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex_column_between_center {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex_column_center_center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

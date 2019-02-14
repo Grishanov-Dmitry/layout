@@ -1,0 +1,31 @@
+.blog-slider { 
+  height: 72px;
+  background: $state_gray_color;
+
+  h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: $white-color;
+  }
+}
+.blog-slider__post_slider {
+  width: 263px;
+  height: 35px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.post_slider__prev_post {
+  width: 141px;
+  background: $charooal_color;
+  color: $white-color;
+}
+.post_slider__next_post {
+  width: 114px;
+  background: $yellow-color;
+  color: $metal_color;
+}
+.post_slider__prev_post, .post_slider__next_post {
+  border-radius: 5px;
+  height: 100%;
+}

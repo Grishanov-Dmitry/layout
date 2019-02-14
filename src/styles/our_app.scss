@@ -1,0 +1,40 @@
+.our_app {
+  height: 1345px;
+  padding-top: 46px;
+  @include displa_flex(column, normal, normal);
+
+  h2 {
+  width: 622px;
+  font-size: 48px;
+  font-weight: bold;
+  color: $oil_color;
+  }
+  .comment_statistic {
+    @include displa_flex(row, normal, normal);
+    font-size: 18px;
+    color: #55606e;
+    margin: 39px 0;
+  }
+  img {
+    width: 100%;
+    height:  auto;
+  }
+  .slash {
+    margin: 0 15px;
+  }
+  .app_description {
+    margin-top: 35px;
+    font-size: 16px;
+    color: $monsoon_color;
+  }
+  h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: $oil_color;
+    margin: 30px 0 20px;
+    span {
+      font-size: 36px;
+      font-weight: bold;
+    }
+  }
+}

@@ -1,16 +1,16 @@
 .portfolio {
   padding-top: 54px;
-  background: $gray-color-3;
+  background: $natural_color;
   height: 470px;
 }
 
-.p_style_1 {
+.portfolio_discription-text {
   margin-bottom: 48px;
 }
 
-.portfolio_items {
-  @include displa_flex(row, space-between, center);
+.portfolio__examples {
   text-align: center;
+
   img {
     width: 200px;
     height: 150px;
@@ -20,7 +20,7 @@
   h3 {
     font-size: 21px;
     font-weight: bold;
-    color: $dark-color-3;
+    color: $oil_color;
     margin-bottom: 5px;
   }
 }

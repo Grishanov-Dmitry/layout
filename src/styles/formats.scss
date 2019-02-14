@@ -1,14 +1,9 @@
 .formats {
   height: 376px;
-  background: $gray-color-3;
-  
-  .container {
-    @include displa_flex(row, space-around, center);
-  }
+  background: $natural_color;
 
-  .formats_item {
+  &_block-with-img {
     width: 258px;
-    @include displa_flex(column, center, center);
   }
 
   img {
@@ -16,7 +11,7 @@
   }
 
   h3 {
-    color: $dark-color-3;
+    color: $oil_color;
     width: 193px;
     text-align: center;
     font-size: 21px;
@@ -25,7 +20,7 @@
   
   p {
     font-size: 14px;
-    color: $dark-color-3;
+    color: $oil_color;
     width: 193px;
     text-align: center;
   }

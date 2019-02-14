@@ -1,0 +1,26 @@
+.presentation {
+  height: 663px;
+  background: url(../../public/img/bg.png) no-repeat;
+}
+
+.presentation__text {
+  margin-top: 63px;
+  text-align: center;
+
+  h1 {
+    font-size: 60px;
+    color: $white-color;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 16px;
+    color: $silver_color;
+  }
+}
+
+.presentation__text_quotes {
+  q {
+    quotes: "\201c" "\201d";
+    color: white;
+  }
+}

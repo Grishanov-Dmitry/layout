@@ -1,69 +1,59 @@
 header {
 	margin: auto;
-	background: $dark-color-2;
+	background: $charooal_color;
 	height: 72px;
+}
 
-	.container {
-		@include displa_flex(row, space-between, center);
-	}
-
-	.menu {
-		@include displa_flex(row, space-between, center);
-		span {
-			color: $white-color;
-			font-size: 30px;
-		} 
-	}
-
-	.menu_icon {
-		@include displa_flex(row, center, center);
-		width: 36px;
-		height: 32px;
-		background: $yellow-color;
-		border-radius: 5px;
-		margin-right: 10px;
-		img {
-			width: 18px;
-			height: 18px;
-		}
-	}
-
-	nav {
-		width: 395px;
+.header__menu {
+	span {
 		color: $white-color;
-		font-size: 14px;
-		ul {
-			@include displa_flex(row, space-between, center);
+		font-size: 30px;
+	} 
+}
+
+.header__menu_icon {
+	width: 36px;
+	height: 32px;
+	background: $yellow-color;
+	border-radius: 5px;
+	margin-right: 10px;
+	img {
+		width: 18px;
+		height: 18px;
+	}
+}
+
+nav {
+	width: 395px;
+	color: $white-color;
+	font-size: 14px;
+}
+
+.header__info {
+	&_registration {
+		width: 36px;
+		height: 35px;
+		background: $metal_color;
+		border-radius: 5px;
+		img {
+			width: 16px;
+			height: 13px;
 		}
 	}
-
-	.registration_and_search {
-		@include displa_flex(row, center, normal);
-		.registration {
-			width: 36px;
-			height: 35px;
-			background: $dark-color-1;
-			border-radius: 5px;
-			img {
-				width: 16px;
-				height: 13px;
-			}
-		}
-		.change {
-			width: 36px;
-			height: 35px;
-			background: $gray-color-1;
-			border-radius: 5px;
-			margin: 0 8px;
-		}
-		input {
-			width: 200px;
-			height: 35px;
-			color: $gray-color-2;
-			border-radius: 5px;
-			padding-left: 13px;
-			border: none;
-			box-sizing: border-box;
-		}
+	&_change {
+		width: 36px;
+		height: 35px;
+		background: $state_gray_color;
+		border-radius: 5px;
+		margin: 0 8px;
+	}
+	input {
+		width: 200px;
+		height: 35px;
+		color: $silver_color;
+		border-radius: 5px;
+		padding-left: 13px;
+		border: none;
+		box-sizing: border-box;
 	}
 }

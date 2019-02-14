@@ -1,0 +1,31 @@
+.about_responsive {
+  h2 {
+    margin-top: 48px;
+  }
+}
+
+.about_responsive_p {
+  margin-bottom: 35px;
+}
+
+.about_responsive__discription {
+  width: 288px;
+  margin-left: 64px;
+}
+
+h3 {
+  font-size: 21px;
+  font-weight: bold;
+  color: $oil_color;
+}
+
+.about_responsive__btn_download {
+  width: 112px;
+  height: 36px;
+  background-color: $yellow-color;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 25px;
+  color: $coal_color;
+}
