@@ -35,15 +35,13 @@
 }
 
 .projects__list {
-  @include displa_flex(row, space-between, normal);
+  @include display_flex(row, space-between, normal);
   img {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
   }
   h3 {
     font-size: 21px;
-    font-weight: bold;
-    color: $oil_color;
   }
   p {
     font-size: 14px;
@@ -85,7 +83,7 @@
 .projects__list_project_video_name_text {
   height: 46px;
   padding-left: 19px;
-  @include displa_flex(row, normal, center);
+  @include display_flex(row, normal, center);
   font-size: 18px;
   font-weight: bold;
   color: $oil_color;

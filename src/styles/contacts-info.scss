@@ -1,0 +1,47 @@
+.contacts-info {
+  h3 {
+    margin: 54px auto 15px;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .contacts-info__discription {
+    font-size: 16px;
+    color: $monsoon_color;
+    text-align: center;
+    margin: 0 auto 54px;
+  }
+  h4 {
+    font-size: 21px;
+  }
+}
+
+.contacts-info__address {
+  font-weight: bold;
+}
+
+.contacts-info__requisites {
+  height: 85px;
+  margin-bottom: 60px;
+}
+
+.contacts-info__address, .contacts-info__other, .contacts-info__social {
+  height: 100%;
+}
+
+.span_oil_color {
+  color: $oil_color;
+  font-weight: bold;
+  font-size: 21px;
+}
+
+.contacts-info__email-style {
+  color: $blue-color;
+  font-size: 18px;
+}
+
+.map {
+  iframe {
+    width: 100%;
+  }
+}
