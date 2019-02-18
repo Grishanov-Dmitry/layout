@@ -31,7 +31,8 @@
 
 .projects__discription-p {
   width: 874px;
-  margin-bottom: 52px;
+  padding: 15px 0 52px;
+  margin: auto;
 }
 
 .projects__list_project_comment_auhtor_name {
@@ -59,11 +60,34 @@
   }
 }
 
+.projects__list_img {
+  width: 288px;
+  height: 216px;
+}
+
+.progect_1 {
+  background: url(../../public/img/projects_1.png);
+}
+.progect_2 {
+  background: url(../../public/img/projects_2.png);
+}
+.progect_3 {
+  background: url(../../public/img/projects_3.png);
+}
+
 .projects__list_discription {
   background: $natural-color;
   width: 288px;
   padding: 26px 18px 31px 20px;
   box-sizing: border-box;
+}
+
+.projects__list_discription_p {
+  padding-bottom:20px;
+}
+
+.projects__list_project_bold_text {
+  padding-top: 15px;
 }
 
 .projects__list_2 {

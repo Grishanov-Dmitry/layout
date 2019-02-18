@@ -6,7 +6,7 @@
 }
 
 .portfolio_discription-text {
-  margin-bottom: 48px;
+  padding: 15px 0 48px;
 }
 
 .portfolio__container {
@@ -38,7 +38,7 @@
   text-align: center;
 
   img {
-    width: 200px;
+    width: 200px; // Will delete
     height: auto;
     border-radius: 5px;
     margin-bottom: 28px;
@@ -47,4 +47,24 @@
     font-size: 21px;
     margin-bottom: 5px;
   }
+}
+
+.portfolio_img {
+  width: 200px;
+  height: 150px;
+  border-radius: 5px;
+  margin-bottom: 28px;
+}
+
+.portfolio_1 {
+  background: url(../../public/img/portfolio_1.png);
+}
+.portfolio_2 {
+  background: url(../../public/img/portfolio_2.png);
+}
+.portfolio_3 {
+  background: url(../../public/img/portfolio_3.png);
+}
+.portfolio_4 {
+  background: url(../../public/img/portfolio_3.png);
 }
