@@ -1,6 +1,43 @@
 .presentation {
   height: 663px;
   background: url(../../public/img/bg.png) no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.presentation__container {
+  &::after {
+    content: url(../../public/img/arrow-right.svg); 
+    width: 64px;
+    height: 65px;
+    background: $state-gray-color;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    @include display_flex(column, center, center);
+  }
+  &::before {
+    content: url(../../public/img/arrow-left.svg); 
+    width: 64px;
+    height: 65px;
+    background: $state-gray-color;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    @include display_flex(column, center, center);
+  }
+}
+
+.presentation__text-with-quotes {
+  &:before {
+    content: open-quote;
+  }
+  &::after {
+    content: close-quote;
+  }
+
 }
 
 .presentation__text {
@@ -14,7 +51,7 @@
   }
   p {
     font-size: 16px;
-    color: $silver_color;
+    color: $silver-color;
   }
 }
 

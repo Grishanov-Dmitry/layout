@@ -1,11 +1,37 @@
 .portfolio {
   padding-top: 54px;
-  background: $natural_color;
+  background: $natural-color;
   height: 470px;
+  position: relative;
 }
 
 .portfolio_discription-text {
   margin-bottom: 48px;
+}
+
+.portfolio__container {
+  &::after {
+    content: url(../../public/img/arrow-right.svg); 
+    width: 64px;
+    height: 65px;
+    background: $silver-color;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    @include display_flex(column, center, center);
+  }
+  &::before {
+    content: url(../../public/img/arrow-left.svg); 
+    width: 64px;
+    height: 65px;
+    background: $silver-color;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    @include display_flex(column, center, center);
+  }
 }
 
 .portfolio__examples {
@@ -13,7 +39,7 @@
 
   img {
     width: 200px;
-    height: 150px;
+    height: auto;
     border-radius: 5px;
     margin-bottom: 28px;
   }

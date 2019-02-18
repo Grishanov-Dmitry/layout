@@ -1,19 +1,18 @@
 .contacts-info {
+  padding-top: 54px;
   h3 {
     margin: 54px auto 15px;
     font-size: 36px;
     font-weight: bold;
     text-align: center;
   }
-  .contacts-info__discription {
-    font-size: 16px;
-    color: $monsoon_color;
-    text-align: center;
-    margin: 0 auto 54px;
-  }
   h4 {
     font-size: 21px;
   }
+}
+
+.contacts-info__discription {
+  margin: 0 auto 54px;
 }
 
 .contacts-info__address {
@@ -29,8 +28,8 @@
   height: 100%;
 }
 
-.span_oil_color {
-  color: $oil_color;
+.span_oil-color {
+  color: $oil-color;
   font-weight: bold;
   font-size: 21px;
 }

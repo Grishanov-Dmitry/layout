@@ -1,6 +1,6 @@
 .blog-slider { 
   height: 72px;
-  background: $state_gray_color;
+  background: $monsoon-color;
 
   h2 {
     font-size: 36px;
@@ -16,13 +16,13 @@
 
 .post_slider__prev_post {
   width: 141px;
-  background: $charooal_color;
+  background: $charooal-color;
   color: $white-color;
 }
 .post_slider__next_post {
   width: 114px;
   background: $yellow-color;
-  color: $metal_color;
+  color: $metal-color;
 }
 .post_slider__prev_post, .post_slider__next_post {
   border-radius: 5px;

@@ -1,10 +1,31 @@
 .comments {
-  background: $natural_color;
+  background: $natural-color;
+}
+
+.comments__title-h3 {
+  font-size: 36px;
+}
+
+.comments__title-with-icon {
+  height: 137px;
+}
+
+.comments__comment_statistic_icon {
+  box-sizing: border-box;
+  width: 64px;
+  height: 74px;
+  padding-top: 15px;
+  background: url(../../public/img/comment_icon.svg) no-repeat;
+  background-size: 100%;
+  color: $white-color;
+  margin-right: 5px;
+  font-size: 32px;
+  font-weight: bold;
 }
 
 .comments_comments-list {
-  border-top: 1px solid $gray_border_color;
-  border-bottom: 1px solid $gray_border_color;
+  border-top: 1px solid $gray-border-color;
+  border-bottom: 1px solid $gray-border-color;
   padding-top: 38px;
   img {
     border-radius: 50%;
@@ -16,7 +37,7 @@
   margin-bottom: 15px;
 }
 
-.comments__comment-body {
+.comment-body {
   background: $white-color;
   width: 850px;
   margin-left: 50px;
@@ -24,21 +45,21 @@
   border-radius: 5px;
 }
 
-.comments__comment-body__user-name {
+.comment-body__user-name {
   font-size: 21px;
   font-weight: bold;
-  color: $oil_color;
+  color: $oil-color;
   margin-right: 10px;
 }
 
 .comments__the-comment__big-img {
   width: 80px;
-  height: 80px;
+  height: auto;
 }
 
 .comments__the-comment__small-img {
   width: 64px;
-  height: 64px;
+  height: auto;
 }
 
 .comments__small_comment {
@@ -51,9 +72,9 @@
   margin-bottom: 27px;
 }
 
-.comments__comment-body__comment-text {
+.comment-body__comment-text {
   font-size: 14px;
-  color: $monsoon_color;
+  color: $monsoon-color;
 }
 
 .leave-comment__about-user {
@@ -61,13 +82,18 @@
   input {
     width: 288px;
 		height: 35px;
-		color: $silver_color;
+		color: $silver-color;
 		border-radius: 5px;
 		padding-left: 13px;
 		border: none;
     box-sizing: border-box;
     margin-right: 12px;
+    box-sizing: border-box;
   }
+}
+
+.leave-comment .leave-comment__email-input {
+  width: 333px;
 }
 
 .leave-comment {
@@ -80,10 +106,12 @@
     width: 633px;
     height: 122px;
     border-radius: 5px;
-		padding-left: 13px;
+    padding-left: 13px;
+    padding-top: 15px;
     border: none;
     resize: none;
     margin-bottom: 13px;
+    box-sizing: border-box;
   }
 }
 
@@ -93,4 +121,5 @@
   background: $yellow-color;
   border-radius: 5px;
   border: none;
+  margin-bottom: 35px;
 }

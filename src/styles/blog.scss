@@ -14,7 +14,7 @@
 .blog_discription {
   width: 64%;
   height: 100%;
-  background: $natural_color;
+  background: $natural-color;
 }
 
 .blog__notes-list {
@@ -36,7 +36,7 @@
 }
 
 .blog_nav {
-  background: $state_gray_color;
+  background: $state-gray-color;
   width: 36%;
   height: 100%;
   padding: 62px 0 0 27px;
@@ -57,7 +57,7 @@
 .blog__pagination_prev-page {
   width: 96px;
   height: 32px;
-  background: $state_gray_color;
+  background: $state-gray-color;
 }
 
 .blog__pagination_next-page {
@@ -87,7 +87,7 @@
 .blog__nav_input {
   width: 200px;
   height: 35px;
-  color: $silver_color;
+  color: $silver-color;
   border-radius: 3px;
   padding-left: 13px;
   border: none;

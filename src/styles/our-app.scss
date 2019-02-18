@@ -1,16 +1,10 @@
 .our-app {
-  height: 1345px;
   padding-top: 46px;
   @include display_flex(column, normal, normal);
 
   h2 {
   width: 622px;
   font-size: 48px;
-  }
-
-  img {
-    width: 100%;
-    height:  auto;
   }
 
   h3 {
@@ -28,38 +22,69 @@
 }
 
 .our-app__comment_statistic {
-  @include display_flex(row, normal, normal);
+  @include display_flex(row, normal, center);
   font-size: 18px;
-  color: $monsoon_color;
+  color: $monsoon-color;
   margin: 39px 0;
+}
+
+.our-app__comment_statistic_icon {
+  background: url(../../public/img/comment_icon.svg) no-repeat;
+  width: 32px;
+  height: 37px;
+  color: $white-color;
+  margin-right: 5px;
+  padding-top: 9px;
+  box-sizing: border-box;
+}
+
+.our-app__fb-likes_counter, .our-app__twitter-likes_counter  {
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: $white-color
 }
 
 .our-app__app_description {
   margin-top: 35px;
   font-size: 16px;
-  color: $monsoon_color;
+  color: $monsoon-color;
 }
 
 .our-app__lower-statistic {
-  img {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    margin: 0 34px;
-  }
   p {
     font-size: 24px;
-    color: $monsoon_color;
+    color: $monsoon-color;
   }
-  span {
-    font-size: 32px;
-    font-weight: bold;
-    color: $oil_color;
-  }
+
+}
+
+.our-app__note-number {
+  font-size: 32px;
+  font-weight: bold;
+  color: $oil-color;
+}
+
+.our-app__app_description_main-img {
+  width: 100%;
+  height:  auto;
+}
+
+.our-app__app_description_author-img {
+  width: 160px;
+  height: auto;
+  border-radius: 50%;
+  margin: 0 34px;
+}
+
+.comment_icon {
+  width: 32px;
+  height: 37px;
 }
 
 .our-app__lower-statistic {
   margin-top: 37px;
+  margin-bottom: 45px;
 }
 
 .our-app__lower-statistic__fb_stat {
@@ -77,7 +102,4 @@
   width: 85px;
   height: 34px;
   border-radius: 5px;
-  font-size: 14px;
-  font-weight: bold;
-  color: $white-color
 }

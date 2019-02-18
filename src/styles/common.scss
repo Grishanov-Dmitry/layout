@@ -9,24 +9,25 @@ body {
 }
 
 h2, h3 {
-  color: $oil_color;
+  color: $oil-color;
   font-weight: bold;
 }
 
-.h2_common_style {
+.block-title_h2 {
   font-size: 36px;
   font-weight: bold;
-  color: $oil_color;
+  color: $oil-color;
   margin: auto;
-  text-align: center; 
+  text-align: center;
 }
-.p_margin_bot_48 {
-  width: 874px;
+
+.block-title_p {
   font-size: 16px;
-  color: #55606e;
-  text-align: center; 
-  margin: auto;
+  color: $monsoon-color;
+  text-align: center;
+  line-height: 2.25;
 }
+
 .bold {
   font-weight: bold;
 }
@@ -41,38 +42,61 @@ a {
 }
 
 .flex_row_between_center {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include display_flex(row, space-between, center);
 }
 
 .flex_row_center_center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include display_flex(row, center, center);
+}
+
+.flex_row_center_normal {
+  @include display_flex(row, center, normal);
+}
+
+.flex_row_normal_center {
+  @include display_flex(row, normal, center);
 }
 
 .flex_column_between_center {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  @include display_flex(column, space-between, center);
 }
 
 .flex_column_center_center {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include display_flex(column, center, center);
 }
 
 .flex_column_between_normal {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: normal;
+  @include display_flex(column, space-between, normal);
 }
 
 .style_height_100_percent {
   height: 100%;
+}
+
+.btn_download {
+  width: 112px;
+  height: 36px;
+  background-color: $yellow-color;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 25px;
+  color: $coal-color;
+  &::after {
+    content: url(../../public/img/arrow-down.svg);
+    width: 20px;
+    height: 20px;
+    @include display_flex(column, center, center);
+  }
+}
+
+.btn_read_more {
+  width: 112px;
+  height: 36px;
+  background-color: $yellow-color;
+  font-size: 14px;
+  font-weight: bold;
+  color: $coal-color;
+  border-radius: 5px;
+  margin-top: 20px;
 }
