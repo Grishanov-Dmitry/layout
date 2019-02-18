@@ -47,10 +47,6 @@
 
 .projects__list {
   @include display_flex(row, space-between, normal);
-  img {
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-  }
   h3 {
     font-size: 21px;
   }
@@ -63,6 +59,8 @@
 .projects__list_img {
   width: 288px;
   height: 216px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .progect_1 {
