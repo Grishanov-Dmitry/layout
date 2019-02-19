@@ -17,13 +17,15 @@
 }
 
 .blog__notes-list {
-  width: 691px;
+  width: 633px;
 }
 
 .blog_img {
   width: 288px;
   height: 216px;
   background-size: cover;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
 }
 
 .blog_img_1 {
@@ -38,6 +40,8 @@
   padding: 16px 18px 23px 20px;
   box-sizing: border-box;
   background: $white-color;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
   h2 {
     margin: 15px 0 20px;
   }
@@ -51,49 +55,96 @@
   background: $state-gray-color;
   width: 36%;
   height: 100%;
-  padding: 62px 0 0 27px;
+  padding: 64px 0 0 27px;
 }
 
 .blog_discription {
   @include display_flex(column, normal, flex-end);
+  padding: 54px 58px 0 0;
 }
 
 .blog_discription_content {
-  width: 691px;
+  width: 633px;
 }
 
-.blog__pagination {
-
+.blog_discription_p {
+  padding: 15px 0 39px;
 } 
 
 .blog__pagination_prev-page {
   width: 96px;
   height: 32px;
-  background: $state-gray-color;
+  background: $light-gray-color;
+  margin-right: 8px;
+  border-radius: 5px;
+  color: $gray-color;
+  &:hover {
+    background: $yellow-color;
+  }
 }
 
 .blog__pagination_next-page {
   width: 61px;
   height: 32px;
   background: $white-color;
+  border-radius: 5px;
+  &:hover {
+    background: $yellow-color;
+  }
 }
 
-.blog__nav_choice-category {
+.blog__pagination {
+  padding: 24px 0;
+  width: 633px;
+}
+
+.blog__pagination_ul li {
+  width: 26px;
+  height: 32px;
+  @include display_flex(row, center, center);
+  background: $white-color;
+  border-radius: 5px;
+  margin-right: 8px;
+  cursor: pointer;
+  &:hover {
+    background: $yellow-color;
+  }
+}
+
+.blog__nav_choice-category_text {
   font-size: 21px;
   font-weight: bold;
   color: $white-color;
-  li {
-    margin: 15px;
-  }
+  margin-right: 23px;
 }
 
+.blog__nav_choice-category_icon {
+  width: 33px;
+  height: 33px;
+  background: $metal-color;
+  border-radius: 50px;
+}
+
+
 .blog__nav_choice-param {
+  margin-top: 45px;
   font-size: 18px;
   font-weight: bold;
   color: $white-color;
+  margin-bottom: 107px;
+  width: 260px;
   li {
-    margin: 15px;
+    padding: 10px 0 10px 25px;
+    border-bottom: 1px solid silver;
+    &:hover {
+      cursor: pointer;
+      color: $yellow-color;
+    }
   }
+}
+
+.blog__nav_choice-param .blog__nav_choice-param__last-child {
+  border-bottom: none;
 }
 
 .blog__nav_input {
@@ -104,4 +155,5 @@
   padding-left: 13px;
   border: none;
   box-sizing: border-box;
+  margin-bottom: 43px;
 }

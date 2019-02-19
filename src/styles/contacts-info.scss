@@ -16,6 +16,7 @@
 }
 
 .contacts-info__address {
+  position: relative;
   font-weight: bold;
 }
 
@@ -43,4 +44,51 @@
   iframe {
     width: 100%;
   }
+}
+
+.contacts-info__menu {
+  width: 36px;
+	height: 32px;
+	background: $yellow-color;
+	border-radius: 5px;
+	margin-right: 10px;
+	img {
+		width: 18px;
+		height: 18px;
+	}
+}
+
+.contacts-info__address::before {
+  content: url(../../public/img/small_hamburger.png);
+  width: 36px;
+	height: 32px;
+  background: $yellow-color;	
+  border-radius: 5px;
+  position: absolute;
+  left: -50px;
+  @include display_flex(row, center, center);
+}
+
+.contacts-info__address::after {
+  width: 1px;
+	height: 62px;
+  background: $oil-color;
+  position: absolute;
+  content: '';
+  right: -75px;
+  top: 15px;
+}
+
+.contacts-info__other::after {
+  width: 1px;
+	height: 62px;
+  background: $oil-color;
+  position: absolute;
+  content: '';
+  right: -75px;
+  top: 15px;
+}
+
+.contacts-info__other {
+  position: relative;
 }

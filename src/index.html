@@ -183,7 +183,7 @@
         <div class="blog_discription">
           <div class="blog_discription_content">
               <h2>The Blog</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <p class="blog_discription_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
           </div>
           <div class="blog__notes-list flex_row_between_center">
 
@@ -220,9 +220,9 @@
             </div>
 
           </div>
-          <div class="blog__pagination flex_row_between_center">
+          <div class="blog__pagination flex_row_flex-start_normal">
             <div class="blog__pagination_prev-page flex_column_center_center">previous</div>
-            <ul class="flex_row_between_center">
+            <ul class="blog__pagination_ul flex_row_between_center">
               <li>1</li>
               <li>2</li>
               <li>3</li>
@@ -234,9 +234,12 @@
         </div>
         <div class="blog_nav">
           <input type="text" placeholder="search our blog" class="blog__nav_input">
-          <ul>
-            <li class="blog__nav_choice-category">by Category</li>
-          </ul>
+          <div class="blog__nav_choice-category flex_row_flex-start_center">
+            <div class="blog__nav_choice-category_text">by Category</div> 
+            <div class="blog__nav_choice-category_icon flex_row_center_center">
+              <img src="../public/img/arrow_down_white.svg" alt="arrow">
+            </div>
+          </div>
           <ul class="blog__nav_choice-param">
             <li>All</li>
             <li>Graphic design</li>
@@ -246,7 +249,7 @@
             <li>Business</li>
             <li>Development</li>
             <li>User Expirience</li>
-            <li>Interwiew</li>
+            <li class="blog__nav_choice-param__last-child">Interwiew</li>
           </ul>
         </div>
         </div>
@@ -273,7 +276,7 @@
           <div class="our-app__comment_statistic_icon flex_row_center_normal">3</div>
           <div class="comments_counter"> Сomments</div>
           <span class="our-app__slash"> / </span>
-          <div class="comments_by">By <span class="blue_color">John Doe</span></div>
+          <div class="comments_by">By <span class="blue-color">John Doe</span></div>
         </div>
         <img class="our-app__app_description_main-img" src="../public/img/game.png" alt="game_app">
         <p class="our-app__app_description">
