@@ -8,31 +8,6 @@
   padding: 15px 0 48px;
 }
 
-.portfolio__container {
-  &::after {
-    content: url(../../public/img/arrow-right.svg); 
-    width: 64px;
-    height: 65px;
-    background: $silver-color;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    right: 5%;
-    @include display_flex(column, center, center);
-  }
-  &::before {
-    content: url(../../public/img/arrow-left.svg); 
-    width: 64px;
-    height: 65px;
-    background: $silver-color;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 5%;
-    @include display_flex(column, center, center);
-  }
-}
-
 .portfolio__examples {
   text-align: center;
   h3 {

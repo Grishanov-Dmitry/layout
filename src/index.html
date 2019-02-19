@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Layout</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 <body>
     <header>
@@ -36,12 +39,68 @@
     </header>
 
     <section class="presentation">
-      <div class="container flex_column_between_center presentation__container">
-        <div class="presentation__text">
-          <h1 class="presentation__text-with-quotes"><q class="presentation__text_quotes">A Title Showcase Example Presentation</q></h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+
+      <div class="container presentation__container" >
+
+          <button type="button" class="slick-prev left_slider_arrow slider_right_arrow slider_arrow">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 25" width="17" height="25">
+                <style>
+                  tspan { white-space:pre }
+                  .shp0 { fill: white } 
+                </style>
+                <g id="showcase">
+                  <g id="slider btns">
+                    <g id="right (hover)">
+                      <path id="arrow" class="shp0" d="M3.77,24.78l12.28,-12.28l-12.28,-12.28l-2.83,2.83l9.45,9.45l-9.45,9.45z" />
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </button>
+
+            <button type="button" class="slick-next right_slider_arrow slider_left_arrow slider_arrow">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 25" width="17" height="25">
+                <style>
+                  tspan { white-space:pre }
+                  .shp0 { fill: #ffffff } 
+                </style>
+                <g id="showcase">
+                  <g id="slider btns">
+                    <g id="left">
+                      <path id="arrow" class="shp0" d="M16.06,21.95l-9.45,-9.45l9.45,-9.45l-2.83,-2.83l-12.28,12.28l12.28,12.28z" />
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </button>
+
+        <div class="flex_row_between_center slider" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
+
+            <div class="presentation__block">
+              <div class="presentation__text">
+                  <h1 class="presentation__text-with-quotes"><q class="presentation__text_quotes">A Title Showcase Example Presentation</q></h1>
+                  <p>g;ldfg;d kf  k;sgd k; sdgd;kl sdgk; sdkd;lgg sd dkg;sdg  k;sdgkk</p>
+                </div>
+                <img class="presentation_img" src="../public/img/comp.png" alt="comp">
+            </div>
+
+            <div class="presentation__block">
+              <div class="presentation__text">
+                  <h1 class="presentation__text-with-quotes"><q class="presentation__text_quotes">Any different text Example Presentation </q></h1>
+                  <p>mdg.dfmg sdgdg,/sdgd  ,/sd/g ,/sd/gm dsg gm/dgg /msms /g/m df/ g.</p>
+                </div>
+                <img class="presentation_img" src="../public/img/comp.png" alt="comp">
+            </div>
+
+            <div class="presentation__block">
+              <div class="presentation__text">
+                  <h1 class="presentation__text-with-quotes"><q class="presentation__text_quotes">Any different text Example Presentation </q></h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                </div>
+                <img class="presentation_img" src="../public/img/comp.png" alt="comp">
+            </div>
         </div>
-        <img src="../public/img/comp.png" alt="comp">
+        
       </div>
     </section>
 
@@ -97,6 +156,39 @@
 
     <section class="portfolio">
         <div class="container portfolio__container">
+
+            <button type="button" class="slick-prev left_slider_arrow left_arrow slider_arrow">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 25" width="17" height="25">
+                <style>
+                  tspan { white-space:pre }
+                  .shp0 { fill: white } 
+                </style>
+                <g id="showcase">
+                  <g id="slider btns">
+                    <g id="right (hover)">
+                      <path id="arrow" class="shp0" d="M3.77,24.78l12.28,-12.28l-12.28,-12.28l-2.83,2.83l9.45,9.45l-9.45,9.45z" />
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </button>
+
+            <button type="button" class="slick-next right_slider_arrow right_arrow slider_arrow">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 25" width="17" height="25">
+                <style>
+                  tspan { white-space:pre }
+                  .shp0 { fill: #ffffff } 
+                </style>
+                <g id="showcase">
+                  <g id="slider btns">
+                    <g id="left">
+                      <path id="arrow" class="shp0" d="M16.06,21.95l-9.45,-9.45l9.45,-9.45l-2.83,-2.83l-12.28,12.28l12.28,12.28z" />
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </button>
+            
             <h2 class="block-title_h2">
               Our Portfolio. Work in Progress
             </h2>
@@ -104,23 +196,28 @@
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
             </p>
-            <div class="portfolio__examples flex_row_between_center">
-              <div >
+            <div class="portfolio__examples flex_row_between_center slider_2" data-slick='{"slidesToShow": 4, "slidesToScroll": 1}'>
+              <div>
                 <div class="portfolio_img portfolio_1"></div>
                 <h3>Flat UI Kit vol1</h3>
                 <p>Apr 10, 2013</p>
               </div>
-              <div >
+              <div>
                 <div class="portfolio_img portfolio_2"></div>
                 <h3>Flat UI Kit vol1</h3>
                 <p>Apr 10, 2013</p>
               </div>
-              <div >
+              <div>
                 <div class="portfolio_img portfolio_3"></div>
                 <h3>Flat UI Kit vol1</h3>
                 <p>Apr 10, 2013</p>
               </div>
-              <div >
+              <div>
+                <div class="portfolio_img portfolio_3"></div>
+                <h3>Flat UI Kit vol1</h3>
+                <p>Apr 10, 2013</p>
+              </div>
+              <div>
                 <div class="portfolio_img portfolio_3"></div>
                 <h3>Flat UI Kit vol1</h3>
                 <p>Apr 10, 2013</p>
@@ -404,4 +501,5 @@
         © 2013 <span class="yellow-color"> FairTemplate</span>. All Rights Reserved
     </footer>
 </body>
+
 </html>

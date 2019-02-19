@@ -5,29 +5,8 @@
   position: relative;
 }
 
-.presentation__container {
-  &::after {
-    content: url(../../public/img/arrow-right.svg); 
-    width: 64px;
-    height: 65px;
-    background: $state-gray-color;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    right: 5%;
-    @include display_flex(column, center, center);
-  }
-  &::before {
-    content: url(../../public/img/arrow-left.svg); 
-    width: 64px;
-    height: 65px;
-    background: $state-gray-color;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 5%;
-    @include display_flex(column, center, center);
-  }
+.presentation_img {
+  width: 100%;
 }
 
 .presentation__text-with-quotes {
@@ -59,4 +38,8 @@
     quotes: "\201c" "\201d";
     color: white;
   }
+}
+
+.presentation__text-with-quotes + p {
+  margin-bottom: 15px;
 }
