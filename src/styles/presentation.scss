@@ -1,5 +1,5 @@
 .presentation {
-  height: 663px;
+  padding-top: 63px;
   background: url(../../public/img/bg.png) no-repeat;
   background-size: 100% 100%;
   position: relative;
@@ -41,7 +41,6 @@
 }
 
 .presentation__text {
-  margin-top: 63px;
   text-align: center;
 
   h1 {
