@@ -32,7 +32,7 @@ h2, h3 {
   font-weight: bold;
 }
 
-.blue_color {
+.blue-color {
   color: $blue-color;
 }
 
@@ -84,6 +84,14 @@ a {
 
 .flex_row_center_normal {
   @include display_flex(row, center, normal);
+}
+
+.flex_row_flex-start_normal {
+  @include display_flex(row, flex-start, normal);
+}
+
+.flex_row_flex-start_center {
+  @include display_flex(row, flex-start, center);
 }
 
 .flex_row_normal_center {
