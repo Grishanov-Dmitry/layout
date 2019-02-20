@@ -38,6 +38,11 @@
   box-sizing: border-box;
 }
 
+.our-app__social-block {
+  margin-right: 100px;
+  margin-left: auto;
+}
+
 .our-app__fb-likes_counter, .our-app__twitter-likes_counter {
   margin-left: 10px;
   font-size: 14px;
@@ -89,13 +94,11 @@
 
 .our-app__lower-statistic__fb_stat {
   background-color: $fiolet-color;
-  margin-left: auto;
   margin-right: 11px;
 }
 
 .our-app__lower-statistic__twit_stat {
   background-color: $blue-color;
-  margin-right: 100px;
 }
 
 .our-app__lower-statistic__fb_stat, .our-app__lower-statistic__twit_stat {
