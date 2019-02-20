@@ -40,6 +40,35 @@ h2, h3 {
   color: $yellow-color;
 }
 
+.right_slider_arrow {
+  width: 64px;
+  height: 65px;
+  background: $silver-color;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  @include display_flex(column, center, center);
+}
+
+.left_slider_arrow { 
+  width: 64px;
+  height: 65px;
+  background: $silver-color;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  @include display_flex(column, center, center);
+}
+
+.slider_arrow:hover {
+  background: $yellow-color;
+  .shp0 {
+    fill: $metal-color;
+  }
+}
+
 a {
   text-decoration: none;
   color: $white-color;

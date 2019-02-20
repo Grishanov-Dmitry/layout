@@ -23,13 +23,14 @@
 .blog_img {
   width: 288px;
   height: 216px;
+  background-size: cover;
 }
 
 .blog_img_1 {
-  background: url(../../public/img/blog_1.png);
+  background: url(../../public/img/blog_1.png) no-repeat;
 }
 .blog_img_2 {
-  background: url(../../public/img/blog_2.png);
+  background: url(../../public/img/blog_2.png) no-repeat;
 }
 
 .blog__notes-list__note-discription {
