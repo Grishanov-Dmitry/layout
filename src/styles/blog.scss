@@ -83,6 +83,10 @@
   }
 }
 
+.post_slider__prev_post, .post_slider__next_post, .blog__pagination_prev-page, .blog__pagination_next-page {
+  cursor: pointer;
+}
+
 .blog__pagination_next-page {
   width: 61px;
   height: 32px;
