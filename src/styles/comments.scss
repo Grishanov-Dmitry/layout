@@ -51,6 +51,15 @@
   margin-left: 50px;
   padding: 27px 33px 25px 34px;
   border-radius: 5px;
+  position: relative;
+  &::before {
+    content: '';
+    border: 10px solid transparent;
+    border-right: 12px solid $white-color;
+    position: absolute;
+    left: -20px;
+    top: 60px;
+  }
 }
 
 .comment-body__user-name {
