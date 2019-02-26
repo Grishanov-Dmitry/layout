@@ -28,6 +28,13 @@ header {
 	cursor: pointer;
 }
 
+.header__info_change {
+	img {
+		width: 15px;
+		height: 15px;
+	}
+}
+
 nav {
 	color: $white-color;
 	font-size: 14px;
