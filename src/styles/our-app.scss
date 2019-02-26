@@ -87,6 +87,11 @@
   height: 37px;
 }
 
+.text-with-right-slash::after {
+  content: '/';
+  margin: 0 15px;
+}
+
 .our-app__lower-statistic {
   margin-top: 37px;
   margin-bottom: 45px;
