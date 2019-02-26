@@ -1,26 +1,37 @@
 .portfolio {
-  padding-top: 54px;
-  background: $natural_color;
-  height: 470px;
+  padding: 54px 0 59px;
+  background: $natural-color;
+  position: relative;
 }
 
 .portfolio_discription-text {
-  margin-bottom: 48px;
+  padding: 15px 0 48px;
 }
 
 .portfolio__examples {
   text-align: center;
-
-  img {
-    width: 200px;
-    height: 150px;
-    border-radius: 5px;
-    margin-bottom: 28px;
-  }
   h3 {
     font-size: 21px;
-    font-weight: bold;
-    color: $oil_color;
     margin-bottom: 5px;
   }
+}
+
+.portfolio_img {
+  width: 200px;
+  height: 150px;
+  border-radius: 5px;
+  margin: 0 auto 28px;
+}
+
+.portfolio_1 {
+  background: url(../../public/img/portfolio_1.png) no-repeat;
+}
+.portfolio_2 {
+  background: url(../../public/img/portfolio_2.png) no-repeat;
+}
+.portfolio_3 {
+  background: url(../../public/img/portfolio_3.png) no-repeat;
+}
+.portfolio_4 {
+  background: url(../../public/img/portfolio_3.png) no-repeat;
 }

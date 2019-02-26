@@ -1,10 +1,26 @@
 .presentation {
-  height: 663px;
+  padding-top: 63px;
   background: url(../../public/img/bg.png) no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.presentation_img {
+  width: 100%;
+  height: auto;
+}
+
+.presentation__text-with-quotes {
+  &:before {
+    content: open-quote;
+  }
+  &::after {
+    content: close-quote;
+  }
+
 }
 
 .presentation__text {
-  margin-top: 63px;
   text-align: center;
 
   h1 {
@@ -14,7 +30,7 @@
   }
   p {
     font-size: 16px;
-    color: $silver_color;
+    color: $silver-color;
   }
 }
 
@@ -23,4 +39,8 @@
     quotes: "\201c" "\201d";
     color: white;
   }
+}
+
+.presentation__text-with-quotes + p {
+  margin-bottom: 15px;
 }

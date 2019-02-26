@@ -1,9 +1,10 @@
-<!DOCTYPE html>
+~<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Layout</title>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 </head>
 <body>
     <header>
@@ -24,37 +25,68 @@
               </ul>
             </nav>
             <div class="header__info flex_row_center_center">
-              <div class="header__info_registration"></div>
-              <div class="header__info_change"></div>
+              <div class="header__info_registration flex_row_center_center">
+                <img src="../public/img/user-icon.png" alt="user-icon">
+              </div>
+              <div class="header__info_change flex_row_center_center">
+                <img src="../public/img/change_icon.png" alt="user-icon">
+              </div>
               <input type="header__info_text" placeholder="search">
             </div>
         </div>
     </header>
 
     <section class="presentation">
-      <div class="container flex_column_between_center">
-        <div class="presentation__text">
-          <h1><q class="presentation__text_quotes">A Title Showcase Example Presentation</q></h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+
+      <div class="container presentation__container" >
+
+          <button type="button" class="slick-prev left_slider_arrow slider_right_arrow slider_arrow"></button>
+          <button type="button" class="slick-next right_slider_arrow slider_left_arrow slider_arrow"></button>
+
+        <div class="flex_row_between_center slider" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
+
+            <div class="presentation__block">
+              <div class="presentation__text">
+                  <h1 class="presentation__text-with-quotes"><q class="presentation__text_quotes">A Title Showcase Example Presentation</q></h1>
+                  <p>g;ldfg;d kf  k;sgd k; sdgd;kl sdgk; sdkd;lgg sd dkg;sdg  k;sdgkk</p>
+                </div>
+                <img class="presentation_img" src="../public/img/comp.png" alt="comp">
+            </div>
+
+            <div class="presentation__block">
+              <div class="presentation__text">
+                  <h1 class="presentation__text-with-quotes"><q class="presentation__text_quotes">Any different text Example Presentation </q></h1>
+                  <p>mdg.dfmg sdgdg,/sdgd  ,/sd/g ,/sd/gm dsg gm/dgg /msms /g/m df/ g.</p>
+                </div>
+                <img class="presentation_img" src="../public/img/comp.png" alt="comp">
+            </div>
+
+            <div class="presentation__block">
+              <div class="presentation__text">
+                  <h1 class="presentation__text-with-quotes"><q class="presentation__text_quotes">Any different text Example Presentation </q></h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                </div>
+                <img class="presentation_img" src="../public/img/comp.png" alt="comp">
+            </div>
         </div>
-        <img src="../public/img/comp.png" alt="comp">
+        
       </div>
     </section>
 
     <section class="formats">
       <div class="container flex_row_between_center">
         <div class="monitor formats_block-with-img flex_column_center_center">
-            <img src="../public/img/monitor format.png" alt="monitor">
+            <div class="formats__img-container"><img src="../public/img/monitor format.png" alt="monitor"></div>
             <h3>Monitor Format</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. </p>
           </div>
           <div class="iphone formats_block-with-img flex_column_center_center">
-              <img src="../public/img/phone_format.png" alt="monitor">
+              <div class="formats__img-container"><img src="../public/img/phone_format.png" alt="phone"></div>
               <h3>iPhone Format</h3>
               <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiatcat. </p>
           </div>
           <div class="ipad formats_block-with-img flex_column_center_center">
-              <img src="../public/img/ipad_format.png" alt="monitor">
+              <div class="formats__img-container"><img src="../public/img/ipad_format.png" alt="ipad"></div>
               <h3>iPad Format</h3>
               <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
           </div>
@@ -63,59 +95,71 @@
 
     <section class="about_responsive">
       <div class="container">
-        <h2 class="h2_common_style">
+        <h2 class="block-title_h2">
           Think Responsive, Customize at Will
-        </h2><br>
-        <p class="about_responsive_p">
+        </h2>
+        <p class="about_responsive_p block-title_p">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         </p>
         <div class="about_responsive_discription flex_row_center_center">
-          <img src="../public/img/ipad_iphone.png" alt="img">
+          <img src="../public/img/ipad_iphone.png" alt="ipad_iphone" class="about_responsive__main-img">
           <div class="about_responsive__discription">
-            <h3>Template for you Projects</h3><br>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur 
-                adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br>
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br><br>
+            <h3>Template for you Projects</h3>
+            <p class="about_responsive__discription__main-text">
+              Lorem ipsum dolor sit amet, consectetur 
+                  adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <p class="about_responsive__discription__main-text">
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <p >
                 <span class="bold">Duis aute irure dolor in reprehenderit</span> in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
-            <a href="#">
-              <div class="about_responsive__btn_download flex_row_center_center">Download</div>
-            </a>
+              <button class="btn_download flex_row_center_center">Download</button>
           </div>
         </div>
       </div>
     </section>
 
     <section class="portfolio">
-        <div class="container">
-            <h2 class="h2_common_style">
+        <div class="container portfolio__container">
+
+            <button type="button" class="slick-prev left_slider_arrow left_arrow slider_arrow"></button>
+
+            <button type="button" class="slick-next right_slider_arrow right_arrow slider_arrow"></button>
+            
+            <h2 class="block-title_h2">
               Our Portfolio. Work in Progress
-            </h2><br>
-            <p class="portfolio_discription-text">
+            </h2>
+            <p class="portfolio_discription-text block-title_p">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
             </p>
-            <div class="portfolio__examples flex_row_between_center">
-              <div >
-                <img src="../public/img/portfolio_1.png" alt="img">
+            <div class="portfolio__examples flex_row_between_center slider_2" data-slick='{"slidesToShow": 4, "slidesToScroll": 1}'>
+              <div>
+                <div class="portfolio_img portfolio_1"></div>
                 <h3>Flat UI Kit vol1</h3>
                 <p>Apr 10, 2013</p>
               </div>
-              <div >
-                <img src="../public/img/portfolio_2.png" alt="img">
+              <div>
+                <div class="portfolio_img portfolio_2"></div>
                 <h3>Flat UI Kit vol1</h3>
                 <p>Apr 10, 2013</p>
               </div>
-              <div >
-                <img src="../public/img/portfolio_2.png" alt="img">
+              <div>
+                <div class="portfolio_img portfolio_3"></div>
                 <h3>Flat UI Kit vol1</h3>
                 <p>Apr 10, 2013</p>
               </div>
-              <div >
-                <img src="../public/img/portfolio_3.png" alt="img">
+              <div>
+                <div class="portfolio_img portfolio_3"></div>
+                <h3>Flat UI Kit vol1</h3>
+                <p>Apr 10, 2013</p>
+              </div>
+              <div>
+                <div class="portfolio_img portfolio_3"></div>
                 <h3>Flat UI Kit vol1</h3>
                 <p>Apr 10, 2013</p>
               </div>
@@ -124,40 +168,42 @@
     </section>
     <section class="projects">
         <div class="container">
-          <h2 class="h2_common_style">
+          <h2 class="block-title_h2">
             Our Projects. Various Styles
-          </h2><br>
-          <p class="p_margin_bot_48">
+          </h2>
+          <p class="projects__discription-p block-title_p">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           </p>
           <div class="projects__list">
             <div class="projects__list_project">
-              <img src="../public/img/projects_1.png" alt="">
+              <div class="projects__list_img progect_1"></div>
               <div class="projects__list_discription">
-                <h3>Paper Hot Cup Mockup</h3><br>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-                    incididunt ut labore et dolore magna aliqua <br><br>
-                    <span class="bold">Duis aute irure dolor in reprehenderit</span> 
+                <h3>Paper Hot Cup Mockup</h3>
+                <p class="projects__list_discription_p">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+                  incididunt ut labore et dolore magna aliqua
+                </p>
+                <p class="bold">
+                  Duis aute irure dolor in reprehenderit
                 </p>
               </div>
             </div>
             <div class="projects__list_project projects__list_2">
-              <img src="../public/img/projects_2.png" alt="">
-              <h3>Flat Design Icons Set Vol2</h3><br>
+              <div class="projects__list_img progect_2"></div>
+              <h3>Flat Design Icons Set Vol2</h3>
               <p>  
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br>
-                <span class="bold">Duis aute irure dolor in reprehenderit </span> 
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
-              <a href="#">
-                <div class="btn_read_more flex_row_center_center">Read More</div>
-              </a>
+              <p class="bold projects__list_project_bold_text">
+                Duis aute irure dolor in reprehenderit
+              </p>
+                <button class="btn_read_more flex_row_center_center">Read More +</button>
             </div>
             <div class="projects__list_project">
               <div>
                   <div class="projects__list_project_video_name">
-                      <img src="../public/img/projects_3.png" alt="">
+                      <div class="projects__list_img progect_3"></div>
                       <div class="projects__list_project_video_name_text">Video Name</div>
                     </div>
                     <div class="projects__list_project_comment">
@@ -171,18 +217,80 @@
         </div>
     </section>
 
-    <section class="blog">
-      <div class="container">
+    <section class="blog flex_row_center_center">
         <div class="blog_discription">
-          <h2>The Blog</h2>
+          <div class="blog_discription_content">
+              <h2>The Blog</h2>
+              <p class="blog_discription_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+          <div class="blog__notes-list flex_row_between_center">
+
+            <div class="blog__notes-list__note">
+              <div class="blog_img blog_img_1"></div>
+              <div class="blog__notes-list__note-discription">
+                <p class="blog__notes-list__note_data">April 17, 2013</p>
+                <h2>
+                  Ecologicard, Elegant 
+                  Business card Mockup
+                </h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... 
+                </p>
+                <p class="blog__notes-list__note_comment-by">By <a href="#" class="blue-color">John Doe</a></p>
+              </div>
+            </div>
+
+            <div class="blog__notes-list__note">
+                <div class="blog_img blog_img_2"></div>
+              <div class="blog__notes-list__note-discription">
+                <p class="blog__notes-list__note_date">April 17, 2013</p>
+                <h2>
+                  Ecologicard, Elegant 
+                  Business card Mockup
+                </h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... 
+                </p>
+                <p class="blog__notes-list__note_comment-by">By <a href="#" class="blue-color">John Doe</a></p>
+              </div>
+            </div>
+
+          </div>
+          <div class="blog__pagination flex_row_flex-start_normal">
+            <div class="blog__pagination_prev-page flex_column_center_center">previous</div>
+            <ul class="blog__pagination_ul flex_row_between_center">
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+              <li>5</li>
+            </ul>
+            <div class="blog__pagination_next-page flex_row_center_center">next</div>
+          </div>
         </div>
         <div class="blog_nav">
-
+          <input type="text" placeholder="search our blog" class="blog__nav_input">
+          <div class="blog__nav_choice-category flex_row_flex-start_center">
+            <div class="blog__nav_choice-category_text">by Category</div> 
+            <div class="blog__nav_choice-category_icon flex_row_center_center">
+              <img src="../public/img/arrow_down_white.svg" alt="arrow">
+            </div>
+          </div>
+          <ul class="blog__nav_choice-param">
+            <li><button>All</button></li>
+            <li><button>Graphic design</button></li>
+            <li><button>User Interface</button></li>
+            <li><button>Social Media</button></li>
+            <li><button>Technolog</button></li>
+            <li><button>Business</button></li>
+            <li><button>Development</button></li>
+            <li><button>User Expirience</button></li>
+            <li class="blog__nav_choice-param__last-child"><button>Interwiew</button></li>
+          </ul>
         </div>
         </div>
-      
-
-      </div>
     </section>
 
     <section class="blog-slider">
@@ -195,38 +303,148 @@
       </div>
     </section>
     
-    <section class="our_app">
+    <section class="our-app">
       <div class="container">
         <h2>
           Our Seeks iPhone App UI Kit psd is a sleek app design
         </h2>
-        <div class="comment_statistic">
-          <div class="comments_data">March 20, 2013 </div>
-          <span class="slash"> / </span>
-          <div class="comments_counter"> Сomments</div>
-          <span class="slash"> / </span>
-          <div class="comments_by">By <span>John Doe</span></div>
+        <div class="our-app__comment_statistic">
+          <div class="comments_data text-with-right-slash">March 20, 2013 </div>
+          <div class="our-app__comment_statistic_icon flex_row_center_normal">3</div>
+          <div class="comments_counter text-with-right-slash"> Сomments</div>
+          <div class="comments_by">By <span class="blue-color">John Doe</span></div>
         </div>
-        <img src="../public/img/game.png" alt="game_app">
-        <p class="app_description">
+        <img class="our-app__app_description_main-img" src="../public/img/game.png" alt="game_app">
+        <p class="our-app__app_description">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
         </p>
-        <h3><span>1</span>. Lorem ipsum dolor sit amet, </h3>
+        <h3><span class="our-app__note-number">1</span>. Lorem ipsum dolor sit amet, </h3>
         <p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
           aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
           ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
           dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
           officia deserunt mollit anim id est laborum.
         </p>
-        <h3><span>2</span>. Lorem ipsum dolor sit amet, </h3>
+        <h3><span class="our-app__note-number">2</span>. Lorem ipsum dolor sit amet, </h3>
         <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
           aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           </p>
-        <div class="our_app__lower-statistic flex_column_between_center">
-
+        <div class="our-app__lower-statistic flex_row_between_center">
+          <img class="our-app__app_description_author-img" src="../public/img/comment_1.png" alt="comment_img">
+          <p>Written by <a href="#" class="blue-color">John Doe</a></p>
+          <div class="our-app__social-block flex_row_center_center">
+            <div class="our-app__lower-statistic__fb_stat flex_row_center_center">
+                <img src="../public/img/fb-like_icon.svg" alt=""> <span class="our-app__fb-likes_counter">487</span>
+              </div>
+              <div class="our-app__lower-statistic__twit_stat flex_row_center_center">
+                <img src="../public/img/twitter_icon.svg" alt=""><span class="our-app__twitter-likes_counter">657</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+
+    <section class="comments">
+      <div class="container">
+        <div class="comments__title-with-icon flex_row_normal_center">
+          <div class="comments__comment_statistic_icon flex_row_center_normal">3</div>
+          <h3 class="comments__title-h3">Comments</h3>
+        </div>
+        <div class="comments_comments-list">
+
+          <div class="comments__the-comment comments__big_comment flex_row_center_center">
+            <img src="../public/img/comment_2.png" alt="comment_img" class="comments__the-comment__big-img">
+            <div class="comment-body">
+              <div class="comments__about-comment-info">
+                <h4 class="comment-body__user-name">Michael Chuese</h4>
+                <p class="comment-body__comment-date">March 25, 2013 at 3: 51 pm</p>
+                <button class="comments_replay-button">Replay</button>
+              </div>
+              <p class="comment-body__comment-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              </p>
+            </div>
+          </div>
+
+          <div class="comments__the-comment comments__small_comment flex_row_center_center">
+            <img src="../public/img/comment_3.png" alt="comment_img" class="comments__the-comment__small-img">
+            <div class="comment-body">
+              <div class="comments__about-comment-info">
+                <h4 class="comment-body__user-name">Michael Chuese</h4>
+                <p class="comment-body__comment-date">March 25, 2013 at 3: 51 pm</p>
+              </div>
+              <p class="comment-body__comment-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              </p>
+            </div>
+          </div>
+
+          <div class="comments__the-comment comments__big_comment flex_row_center_center">
+            <img src="../public/img/comment_4.png" alt="" class="comments__the-comment__big-img">
+            <div class="comment-body">
+              <div class="comments__about-comment-info">
+                <h4 class="comment-body__user-name">Michael Chuese</h4>
+                <p class="comment-body__comment-date">March 25, 2013 at 3: 51 pm</p>
+                <button class="comments_replay-button">Replay</button>
+              </div>
+              <p class="comment-body__comment-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              </p>
+            </div>
+          </div>
+        </div>
+        <form action="" class="leave-comment">
+            <h3>Leave a Comment</h3>
+            <div class="leave-comment__about-user">
+              <input type="text" placeholder="Your name">
+              <input type="text" placeholder="Your email" class="leave-comment__email-input">
+            </div>
+            <textarea name="new-comment" id="" placeholder="Your comment"></textarea>
+            <button class="post-comment">Post Comment</button>
+          </form>
+      </div>
+    </section>
+
+    <section class="contacts-info">
+      <div class="container">
+        <h2 class="block-title_h2">Contact Us</h2>
+        <p class="contacts-info__discription block-title_p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+        <div class="contacts-info__requisites flex_row_between_center">
+            <div class="contacts-info__address flex_column_between_normal">
+              <h4>Fair Template</h4>
+              <p>123 Street Name. S. 321</p>
+              <p>City Name, State Name</p>
+            </div>
+            <div class="contacts-info__other flex_column_between_normal">
+              <p>Tel. <a href="tel:(123) 456-789X" class="span_oil-color">(123) 456-789X</a><span class="span_oil-color"></span></p>
+              <p>Fax. <a href="#" class="span_oil-color">(122) 987-654X</a></p>
+              <p>Email. <a href="#" class="contacts-info__email-style">companyname@mail.com</a></p>
+            </div>
+            <div class="contacts-info__social flex_column_between_normal">
+              <p><span class="italic_text">facebook</span> <a href="#" class="span_oil-color">f/companyname.com</a></p>
+              <p><span class="italic_text">Twitter</span> <a href="#" class="span_oil-color">@companyname</a></p>
+              <p><span class="italic_text">RSS</span> <a href="#" class="span_oil-color">@rsscompanyname</a></p>
+            </div>
+          </div>
+      </div>
+      <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d9419.846705610484!2d27.525374000000003!3d53.8257576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1550214489265" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+    </section>
+    <footer class="flex_row_center_center">
+        © 2013 <span class="yellow-color footer__selected-text"> FairTemplate.</span> All Rights Reserved
+    </footer>
 </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </html>

@@ -1,27 +1,27 @@
 .formats {
-  height: 376px;
-  background: $natural_color;
+  padding: 46px 0 60px 0;
+  background: $natural-color;
 
   &_block-with-img {
     width: 258px;
   }
 
-  img {
-    margin-bottom: 29px;
-  }
-
   h3 {
-    color: $oil_color;
     width: 193px;
     text-align: center;
     font-size: 21px;
-    font-weight: bold;
   }
   
   p {
     font-size: 14px;
-    color: $oil_color;
+    color: $oil-color;
     width: 193px;
     text-align: center;
   }
+}
+
+.formats__img-container {
+  margin-bottom: 29px;
+  width: 160px;
+  height: 160px;
 }

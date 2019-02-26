@@ -1,0 +1,113 @@
+.our-app {
+  padding-top: 46px;
+  @include display_flex(column, normal, normal);
+
+  h2 {
+  width: 622px;
+  font-size: 48px;
+  }
+
+  h3 {
+    font-size: 24px;
+    margin: 30px 0 20px;
+    span {
+      font-size: 36px;
+      font-weight: bold;
+    }
+  }
+}
+
+.our-app__slash {
+  margin: 0 15px;
+}
+
+.our-app__comment_statistic {
+  @include display_flex(row, normal, center);
+  font-size: 18px;
+  color: $monsoon-color;
+  margin: 39px 0;
+}
+
+.our-app__comment_statistic_icon {
+  background: url(../../public/img/comment_icon.svg) no-repeat;
+  width: 32px;
+  height: 37px;
+  color: $white-color;
+  margin-right: 5px;
+  padding-top: 9px;
+  box-sizing: border-box;
+}
+
+.our-app__social-block {
+  margin-right: 100px;
+  margin-left: auto;
+}
+
+.our-app__fb-likes_counter, .our-app__twitter-likes_counter {
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: $white-color
+}
+
+.our-app__app_description {
+  margin-top: 35px;
+  font-size: 16px;
+  color: $monsoon-color;
+}
+
+.our-app__lower-statistic {
+  p {
+    font-size: 24px;
+    color: $monsoon-color;
+  }
+
+}
+
+.our-app__note-number {
+  font-size: 32px;
+  font-weight: bold;
+  color: $oil-color;
+}
+
+.our-app__app_description_main-img {
+  width: 100%;
+  height:  auto;
+}
+
+.our-app__app_description_author-img {
+  width: 160px;
+  height: auto;
+  border-radius: 50%;
+  margin: 0 34px;
+}
+
+.comment_icon {
+  width: 32px;
+  height: 37px;
+}
+
+.text-with-right-slash::after {
+  content: '/';
+  margin: 0 15px;
+}
+
+.our-app__lower-statistic {
+  margin-top: 37px;
+  margin-bottom: 45px;
+}
+
+.our-app__lower-statistic__fb_stat {
+  background-color: $fiolet-color;
+  margin-right: 11px;
+}
+
+.our-app__lower-statistic__twit_stat {
+  background-color: $blue-color;
+}
+
+.our-app__lower-statistic__fb_stat, .our-app__lower-statistic__twit_stat {
+  width: 85px;
+  height: 34px;
+  border-radius: 5px;
+}

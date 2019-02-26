@@ -1,4 +1,4 @@
-@mixin displa_flex($property_1, $property_2, $property_3) {
+@mixin display_flex($property_1, $property_2, $property_3) {
   display: flex;
   flex-direction: $property_1;
   justify-content: $property_2;

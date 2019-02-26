@@ -5,7 +5,7 @@
 }
 
 .about_responsive_p {
-  margin-bottom: 35px;
+  padding: 15px 0 35px;
 }
 
 .about_responsive__discription {
@@ -15,17 +15,14 @@
 
 h3 {
   font-size: 21px;
-  font-weight: bold;
-  color: $oil_color;
+  padding-bottom: 10px;
 }
 
-.about_responsive__btn_download {
-  width: 112px;
-  height: 36px;
-  background-color: $yellow-color;
-  border-radius: 5px;
-  font-size: 14px;
-  font-weight: bold;
-  margin-top: 25px;
-  color: $coal_color;
+.about_responsive__discription__main-text {
+  margin-bottom: 15px;
+}
+
+.about_responsive__main-img {
+  width: 100%;
+  height: auto;
 }
