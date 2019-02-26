@@ -6,7 +6,6 @@
   width: 288px;
   &_comment {
     width: 288px;
-    height: 130px;
     margin-top: 24px;
     background-color: $state-gray-color;
     border-radius: 5px;
@@ -40,6 +39,8 @@
   font-weight: bold;
 }
 
+
+
 .comment_auhtor {
   margin-top: 25px;
 }
@@ -57,7 +58,7 @@
 
 .projects__list_img {
   width: 288px;
-  height: 216px;
+  min-height: 216px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
@@ -95,14 +96,12 @@
 
 .projects__list_project_video_name {
   background: $natural-color;
-  height: 263px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
 
 .projects__list_project_video_name_text {
-  height: 46px;
-  padding-left: 19px;
+  padding: 19px;
   @include display_flex(row, normal, center);
   font-size: 18px;
   font-weight: bold;

@@ -81,6 +81,10 @@
   }
 }
 
+.post_slider__prev_post, .post_slider__next_post, .blog__pagination_prev-page, .blog__pagination_next-page {
+  cursor: pointer;
+}
+
 .blog__pagination_next-page {
   width: 61px;
   height: 32px;
@@ -126,18 +130,22 @@
 
 .blog__nav_choice-param {
   margin-top: 45px;
-  font-size: 18px;
-  font-weight: bold;
-  color: $white-color;
-  margin-bottom: 107px;
+  margin-bottom: 80px;
   width: 260px;
   li {
-    padding: 10px 0 10px 25px;
+    padding: 9px 0 9px 25px;
     border-bottom: 1px solid silver;
-    &:hover {
-      cursor: pointer;
-      color: $yellow-color;
+    button {
+      background: none;
+      font-size: 18px;
+      font-weight: bold;
+      color: $white-color;
+      &:hover {
+        cursor: pointer;
+        color: $yellow-color;
+      }
     }
+
   }
 }
 

@@ -69,6 +69,10 @@
   @include display_flex(row, center, center);
 }
 
+.contacts-info__address:hover:before {
+  cursor: pointer;
+}
+
 .contacts-info__address::after {
   width: 1px;
 	height: 62px;
